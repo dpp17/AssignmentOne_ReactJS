@@ -1,8 +1,11 @@
+import logo from './Bridgelabzz.jpg';
+import './App.css';
 
 function ComponentStore(){
-  const displayString = "Hello from BridgeLabz 2";
-  return displayString;
-  
+  // const displayString = "Hello from BridgeLabz 2";
+  return (
+    <h2>Hello from BridgeLabz 2</h2>
+  );
 }
 
 // "export default" is used to tell the main component 
@@ -15,7 +18,10 @@ export default function App() {
     <h1>{displayString}</h1>
 
     {/* this way we can use other components */}
-    <h2><ComponentStore /></h2>
+    <ComponentStore />
+
+    {/* this way we can use Property-Binding */}
+    <img src={logo} alt='Bridgelabz logo not found'/>
     </>
 
   );
