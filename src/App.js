@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+function ComponentStore(){
+  const displayString = "Hello from BridgeLabz 2";
+  return displayString;
+  
+}
+
+// "export default" is used to tell the main component 
+export default function App() {
+  const displayString = "Hello from BridgeLabz";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+    {/* this is one way binding */}
+    <h1>{displayString}</h1>
+
+    {/* this way we can use other components */}
+    <h2><ComponentStore /></h2>
+    </>
+
   );
 }
 
-export default App;
+// export default App;
