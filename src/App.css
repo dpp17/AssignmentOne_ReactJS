@@ -40,5 +40,16 @@
 img {
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 30%;
+}
+#age{
+  width: 40px;
+  
+}
+#helloMessage{
+  color: brown;
+}
+.userInput{
+  border-radius: 3px 3px 3px;
+  border-color: cornsilk;
 }
